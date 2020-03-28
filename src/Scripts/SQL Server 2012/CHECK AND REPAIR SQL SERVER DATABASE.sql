@@ -1,0 +1,5 @@
+/* MIT LICENSE Copyright (c) 2020 Javier Cañon | www.javiercanon.com */
+ALTER DATABASE MyDatabaseName SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+DBCC CHECKDB(MyDatabaseName, REPAIR_REBUILD);
+
+ALTER DATABASE MyDatabaseName SET MULTI_USER;
